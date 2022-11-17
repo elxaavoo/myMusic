@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrillFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loadingCentral"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Loading - Central Cee"
+            app:layout_constraintEnd_toEndOf="@+id/loadingCentral"
+            app:layout_constraintStart_toStartOf="@+id/loadingCentral"
+            app:layout_constraintTop_toBottomOf="@+id/loadingCentral" />
+
+        <ImageView
+            android:id="@+id/rolando"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/loadingCentral"
+            app:layout_constraintStart_toStartOf="@+id/loadingCentral"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:src="@drawable/rolando" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ROLANDO(Caught in the rain)"
+            app:layout_constraintEnd_toEndOf="@+id/rolando"
+            app:layout_constraintStart_toStartOf="@+id/rolando"
+            app:layout_constraintTop_toBottomOf="@+id/rolando" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

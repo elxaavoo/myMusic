@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DembowFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/singapur"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/singapur" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Singapour - El Alfa"
+            app:layout_constraintEnd_toEndOf="@+id/singapur"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/singapur"
+            app:layout_constraintTop_toBottomOf="@+id/singapur" />
+
+        <ImageView
+            android:id="@+id/aparatos"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/singapur"
+            app:layout_constraintStart_toStartOf="@+id/singapur"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            android:src="@drawable/losaparatos" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Los Aparatos - El Alfa"
+            app:layout_constraintEnd_toEndOf="@+id/aparatos"
+            app:layout_constraintStart_toStartOf="@+id/aparatos"
+            app:layout_constraintTop_toBottomOf="@+id/aparatos" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

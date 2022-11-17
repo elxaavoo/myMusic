@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="es.damgarcia.mymusic.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_sturdyFragment"
+            app:destination="@id/sturdyFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_drillFragment"
+            app:destination="@id/drillFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_flamencoFragment"
+            app:destination="@id/flamencoFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_dembowFragment2"
+            app:destination="@id/dembowFragment2" />
+        <action
+            android:id="@+id/action_FirstFragment_to_hipHopFragment2"
+            app:destination="@id/hipHopFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sturdyFragment"
+        android:name="es.damgarcia.mymusic.SturdyFragment"
+        android:label="fragment_stuydy"
+        tools:layout="@layout/fragment_stuydy" >
+        <action
+            android:id="@+id/action_sturdyFragment_to_justWannaFragment"
+            app:destination="@id/justWannaFragment" />
+        <action
+            android:id="@+id/action_sturdyFragment_to_shakeItFragment"
+            app:destination="@id/shakeItFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drillFragment"
+        android:name="es.damgarcia.mymusic.DrillFragment"
+        android:label="fragment_drill"
+        tools:layout="@layout/fragment_drill" >
+        <action
+            android:id="@+id/action_drillFragment_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
+        <action
+            android:id="@+id/action_drillFragment_to_rolandoFragment"
+            app:destination="@id/rolandoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flamencoFragment"
+        android:name="es.damgarcia.mymusic.FlamencoFragment"
+        android:label="fragment_flamenco"
+        tools:layout="@layout/fragment_flamenco" >
+        <action
+            android:id="@+id/action_flamencoFragment_to_estrellaFragment"
+            app:destination="@id/estrellaFragment" />
+        <action
+            android:id="@+id/action_flamencoFragment_to_religionFragment"
+            app:destination="@id/religionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dembowFragment2"
+        android:name="es.damgarcia.mymusic.DembowFragment"
+        android:label="fragment_dembow"
+        tools:layout="@layout/fragment_dembow" >
+        <action
+            android:id="@+id/action_dembowFragment2_to_aparatosFragment"
+            app:destination="@id/aparatosFragment" />
+        <action
+            android:id="@+id/action_dembowFragment2_to_singapurFragment"
+            app:destination="@id/singapurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hipHopFragment2"
+        android:name="es.damgarcia.mymusic.HipHopFragment"
+        android:label="fragment_hip_hop"
+        tools:layout="@layout/fragment_hip_hop" >
+        <action
+            android:id="@+id/action_hipHopFragment2_to_dippinFragment"
+            app:destination="@id/dippinFragment" />
+        <action
+            android:id="@+id/action_hipHopFragment2_to_stillFragment"
+            app:destination="@id/stillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="es.damgarcia.mymusic.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
+    <fragment
+        android:id="@+id/rolandoFragment"
+        android:name="es.damgarcia.mymusic.RolandoFragment"
+        android:label="fragment_rolando"
+        tools:layout="@layout/fragment_rolando" />
+    <fragment
+        android:id="@+id/aparatosFragment"
+        android:name="es.damgarcia.mymusic.AparatosFragment"
+        android:label="fragment_aparatos"
+        tools:layout="@layout/fragment_aparatos" />
+    <fragment
+        android:id="@+id/singapurFragment"
+        android:name="es.damgarcia.mymusic.SingapurFragment"
+        android:label="fragment_singapur"
+        tools:layout="@layout/fragment_singapur" />
+    <fragment
+        android:id="@+id/justWannaFragment"
+        android:name="es.damgarcia.mymusic.JustWannaFragment"
+        android:label="fragment_just_wanna"
+        tools:layout="@layout/fragment_just_wanna" />
+    <fragment
+        android:id="@+id/shakeItFragment"
+        android:name="es.damgarcia.mymusic.ShakeItFragment"
+        android:label="fragment_shake_it"
+        tools:layout="@layout/fragment_shake_it" />
+    <fragment
+        android:id="@+id/estrellaFragment"
+        android:name="es.damgarcia.mymusic.EstrellaFragment"
+        android:label="fragment_estrella"
+        tools:layout="@layout/fragment_estrella" />
+    <fragment
+        android:id="@+id/religionFragment"
+        android:name="es.damgarcia.mymusic.ReligionFragment"
+        android:label="fragment_religion"
+        tools:layout="@layout/fragment_religion" />
+    <fragment
+        android:id="@+id/dippinFragment"
+        android:name="es.damgarcia.mymusic.DippinFragment"
+        android:label="fragment_dippin"
+        tools:layout="@layout/fragment_dippin" />
+    <fragment
+        android:id="@+id/stillFragment"
+        android:name="es.damgarcia.mymusic.StillFragment"
+        android:label="fragment_still"
+        tools:layout="@layout/fragment_still" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="es.damgarcia.mymusic.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SturdyFragment">
+
+    <ImageView
+        android:id="@+id/justWannaRock"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/just_wanna_rock" />
+
+    <ImageView
+        android:id="@+id/shakeIt"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/justWannaRock"
+        app:layout_constraintStart_toStartOf="@+id/justWannaRock"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:src="@drawable/shake_it" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Just Wanna Rock - Lil Uzi"
+        app:layout_constraintEnd_toEndOf="@+id/justWannaRock"
+        app:layout_constraintStart_toStartOf="@+id/justWannaRock"
+        app:layout_constraintTop_toBottomOf="@+id/justWannaRock" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Shake It Remix (Cardi B)"
+        app:layout_constraintEnd_toEndOf="@+id/shakeIt"
+        app:layout_constraintStart_toStartOf="@+id/shakeIt"
+        app:layout_constraintTop_toBottomOf="@+id/shakeIt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

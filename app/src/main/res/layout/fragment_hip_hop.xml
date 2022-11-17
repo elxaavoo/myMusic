@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HipHopFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/stillDree"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/dree" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Still Dree ft Snoop Dog"
+            app:layout_constraintEnd_toEndOf="@+id/stillDree"
+            app:layout_constraintStart_toStartOf="@+id/stillDree"
+            app:layout_constraintTop_toBottomOf="@+id/stillDree" />
+
+        <ImageView
+            android:id="@+id/justDippin"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/stillDree"
+            app:layout_constraintStart_toStartOf="@+id/stillDree"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:src="@drawable/justdipping" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Just Dippin' - Snoop DOg"
+            app:layout_constraintEnd_toEndOf="@+id/justDippin"
+            app:layout_constraintStart_toStartOf="@+id/justDippin"
+            app:layout_constraintTop_toBottomOf="@+id/justDippin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
